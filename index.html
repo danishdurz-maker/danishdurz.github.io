@@ -104,6 +104,8 @@
       width:100%;height:180px;border-radius:12px;border:1px solid #1f2937;
       object-fit:cover
     }
+    figure{margin:0}
+    figcaption{line-height:1.4}
     footer{border-top:1px solid #1f2937;padding:24px 0;color:#94a3b8}
     .btn{
       display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent-2));
@@ -126,6 +128,8 @@
         <a href="#task3">Impact</a>
         <span>·</span>
         <a href="#task4">Case Studies</a>
+        <span>·</span>
+        <a href="#gallery">Visual Gallery</a>
       </nav>
     </div>
   </header>
@@ -211,264 +215,275 @@
 
     <!-- Task 2 -->
     <section id="task2" class="section">
-  <h2>Task 2 · Comprehensive Descriptions</h2>
-  <p class="muted">
-    This section explains the purpose and key features of each technology in the
-    built environment lifecycle and shows curated visuals (images and videos) to
-    support understanding.
-  </p>
+      <h2>Task 2 · Comprehensive Descriptions</h2>
+      <p class="muted">
+        This section explains the purpose and key features of each technology in the
+        built environment lifecycle and shows curated visuals (images and videos) to
+        support understanding.
+      </p>
 
-  <div class="accordion">
+      <div class="accordion">
 
-    <!-- DESIGN · BIM -->
-    <div class="acc-item open">
-      <button class="acc-btn" aria-expanded="true">
-        Design · Building Information Modelling (BIM)
-        <span class="chev">▾</span>
-      </button>
-      <div class="acc-panel">
-        <div class="grid grid-2" style="margin-top:12px">
-          <!-- Text column -->
-          <div>
-            <h3>Purpose</h3>
-            <p class="muted">
-              BIM integrates all building disciplines into a single intelligent 3D model,
-              enabling collaborative design, clash detection, and accurate documentation
-              throughout the design phase.
-            </p>
+        <!-- DESIGN · BIM -->
+        <div class="acc-item open">
+          <button class="acc-btn" aria-expanded="true">
+            Design · Building Information Modelling (BIM)
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">
+            <div class="grid grid-2" style="margin-top:12px">
+              <!-- Text column -->
+              <div>
+                <h3>Purpose</h3>
+                <p class="muted">
+                  BIM integrates all building disciplines into a single intelligent 3D model,
+                  enabling collaborative design, clash detection, and accurate documentation
+                  throughout the design phase.
+                </p>
 
-            <h3>Key Features</h3>
-            <ul class="list">
-              <li>3D coordinated modelling between architecture, structure and MEP</li>
-              <li>Clash detection (Revit / Navisworks)</li>
-              <li>4D (time) and 5D (cost) simulation for project planning</li>
-              <li>Automatic generation of drawings and bill of quantities (BOQ)</li>
-            </ul>
-          </div>
+                <h3>Key Features</h3>
+                <ul class="list">
+                  <li>3D coordinated modelling between architecture, structure and MEP</li>
+                  <li>Clash detection (Revit / Navisworks)</li>
+                  <li>4D (time) and 5D (cost) simulation for project planning</li>
+                  <li>Automatic generation of drawings and bill of quantities (BOQ)</li>
+                </ul>
+              </div>
 
-          <!-- Visuals column -->
-          <div>
-            <h3>Visuals</h3>
-            <div class="gallery" style="grid-template-columns:2fr 1.2fr 1.2fr">
-              <figure>
-                <img src="https://www.wsp.com/-/media/service/global/image/img-uclh.jpg?h=710&iar=0&w=1440&hash=D03A88293ABEF9357376EB2239A98D7B"
-                     alt="BIM model of a healthcare project">
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  BIM model used for multidisciplinary coordination.
-                </figcaption>
-              </figure>
+              <!-- Visuals column -->
+              <div>
+                <h3>Visuals</h3>
+                <div class="gallery" style="grid-template-columns:2fr 1.2fr 1.2fr">
+                  <figure>
+                    <img src="https://www.wsp.com/-/media/service/global/image/img-uclh.jpg?h=710&iar=0&w=1440&hash=D03A88293ABEF9357376EB2239A98D7B"
+                         alt="BIM model of a healthcare project">
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      BIM model used for multidisciplinary coordination.
+                    </figcaption>
+                  </figure>
 
-              <figure>
-                <iframe
-                  src="https://www.youtube.com/embed/3VYlYMnONS8"
-                  title="BIM workflow overview"
-                  allowfullscreen>
-                </iframe>
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Video: Introduction to BIM workflow.
-                </figcaption>
-              </figure>
+                  <figure>
+                    <iframe
+                      src="https://www.youtube.com/embed/3VYlYMnONS8"
+                      title="BIM workflow overview"
+                      allowfullscreen>
+                    </iframe>
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Video: Introduction to BIM workflow.
+                    </figcaption>
+                  </figure>
 
-              <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfiPbBKFgT_KNwBsXL3vzYWQXk459y_0vJQ&s"
-                     alt="BIM coordination view">
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Clash-detection and coordination between systems.
-                </figcaption>
-              </figure>
+                  <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfiPbBKFgT_KNwBsXL3vzYWQXk459y_0vJQ&s"
+                         alt="BIM coordination view">
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Clash-detection and coordination between systems.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- CONSTRUCTION · DRONES -->
-    <div class="acc-item">
-      <button class="acc-btn">
-        Construction · Reality Capture &amp; Drones
-        <span class="chev">▾</span>
-      </button>
-      <div class="acc-panel">
-        <div class="grid grid-2" style="margin-top:12px">
-          <!-- Text column -->
-          <div>
-            <h3>Purpose</h3>
-            <p class="muted">
-              Reality capture uses drones, photogrammetry and LiDAR to document site
-              conditions and construction progress safely and efficiently.
-            </p>
+        <!-- CONSTRUCTION · DRONES -->
+        <div class="acc-item">
+          <button class="acc-btn">
+            Construction · Reality Capture &amp; Drones
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">
+            <div class="grid grid-2" style="margin-top:12px">
+              <!-- Text column -->
+              <div>
+                <h3>Purpose</h3>
+                <p class="muted">
+                  Reality capture uses drones, photogrammetry and LiDAR to document site
+                  conditions and construction progress safely and efficiently.
+                </p>
 
-            <h3>Key Features</h3>
-            <ul class="list">
-              <li>High-resolution orthophotos of the construction site</li>
-              <li>LiDAR point clouds for accurate as-built models</li>
-              <li>Progress tracking and earthwork volume calculations</li>
-              <li>Remote safety inspections without exposing workers to hazards</li>
-            </ul>
-          </div>
+                <h3>Key Features</h3>
+                <ul class="list">
+                  <li>High-resolution orthophotos of the construction site</li>
+                  <li>LiDAR point clouds for accurate as-built models</li>
+                  <li>Progress tracking and earthwork volume calculations</li>
+                  <li>Remote safety inspections without exposing workers to hazards</li>
+                </ul>
+              </div>
 
-          <!-- Visuals column -->
-          <div>
-            <h3>Visuals</h3>
-            <div class="gallery" style="grid-template-columns:2fr 1.2fr 1.2fr">
-              <figure>
-                <img src="https://media.licdn.com/dms/image/v2/D4D12AQEMCOsS7yUXNA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1679565014156?e=2147483647&v=beta&t=WgwEomsfGTXGIG_YRzechL4mQgxMf4IEWh99DuHuWBA"
-                     alt="Drone scanning construction site">
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Drone capturing site data from above.
-                </figcaption>
-              </figure>
+              <!-- Visuals column -->
+              <div>
+                <h3>Visuals</h3>
+                <div class="gallery" style="grid-template-columns:2fr 1.2fr 1.2fr">
+                  <figure>
+                    <img src="https://media.licdn.com/dms/image/v2/D4D12AQEMCOsS7yUXNA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1679565014156?e=2147483647&v=beta&t=WgwEomsfGTXGIG_YRzechL4mQgxMf4IEWh99DuHuWBA"
+                         alt="Drone scanning construction site">
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Drone capturing site data from above.
+                    </figcaption>
+                  </figure>
 
-              <figure>
-                <iframe
-                  src="https://www.youtube.com/embed/6un2J8mtzSA"
-                  title="Drone mapping for construction"
-                  allowfullscreen>
-                </iframe>
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Video: Drone mapping and progress monitoring.
-                </figcaption>
-              </figure>
+                  <figure>
+                    <iframe
+                      src="https://www.youtube.com/embed/6un2J8mtzSA"
+                      title="Drone mapping for construction"
+                      allowfullscreen>
+                    </iframe>
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Video: Drone mapping and progress monitoring.
+                    </figcaption>
+                  </figure>
 
-              <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROTlTHhflH2HX1We6prNM599XICtMa-jHt6w&s"
-                     alt="LiDAR point cloud of building">
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  LiDAR point cloud used for as-built verification.
-                </figcaption>
-              </figure>
+                  <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROTlTHhflH2HX1We6prNM599XICtMa-jHt6w&s"
+                         alt="LiDAR point cloud of building">
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      LiDAR point cloud used for as-built verification.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- OPERATION · DIGITAL TWIN -->
-    <div class="acc-item">
-      <button class="acc-btn">
-        Operation · Digital Twin (Tunnel)
-        <span class="chev">▾</span>
-      </button>
-      <div class="acc-panel">
-        <div class="grid grid-2" style="margin-top:12px">
-          <!-- Text column -->
-          <div>
-            <h3>Purpose</h3>
-            <p class="muted">
-              A digital twin of a tunnel or infrastructure asset connects the physical
-              asset with a virtual model using IoT data to monitor safety, traffic and
-              environmental conditions in real time.
-            </p>
+        <!-- OPERATION · DIGITAL TWIN -->
+        <div class="acc-item">
+          <button class="acc-btn">
+            Operation · Digital Twin (Tunnel)
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">
+            <div class="grid grid-2" style="margin-top:12px">
+              <!-- Text column -->
+              <div>
+                <h3>Purpose</h3>
+                <p class="muted">
+                  A digital twin of a tunnel or infrastructure asset connects the physical
+                  asset with a virtual model using IoT data to monitor safety, traffic and
+                  environmental conditions in real time.
+                </p>
 
-            <h3>Key Features</h3>
-            <ul class="list">
-              <li>Live dashboards showing tunnel status and traffic flow</li>
-              <li>Integration of sensors for lighting, ventilation and safety systems</li>
-              <li>Simulation of emergency scenarios and response strategies</li>
-              <li>Historical data analysis to improve operations and maintenance plans</li>
-            </ul>
-          </div>
+                <h3>Key Features</h3>
+                <ul class="list">
+                  <li>Live dashboards showing tunnel status and traffic flow</li>
+                  <li>Integration of sensors for lighting, ventilation and safety systems</li>
+                  <li>Simulation of emergency scenarios and response strategies</li>
+                  <li>Historical data analysis to improve operations and maintenance plans</li>
+                </ul>
+              </div>
 
-          <!-- Visuals column -->
-          <div>
-            <h3>Visuals</h3>
-            <div class="gallery" style="grid-template-columns:2fr 1.2fr 1.2fr">
-              <figure>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS709lid8Z330mn5d_pj4XwNAP1e39dZUb6bw&s"
-                     alt="Digital twin model of a tunnel">
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Digital twin visualisation of tunnel infrastructure.
-                </figcaption>
-              </figure>
+              <!-- Visuals column -->
+              <div>
+                <h3>Visuals</h3>
+                <div class="gallery" style="grid-template-columns:2fr 1.2fr 1.2fr">
+                  <figure>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS709lid8Z330mn5d_pj4XwNAP1e39dZUb6bw&s"
+                         alt="Digital twin model of a tunnel">
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Digital twin visualisation of tunnel infrastructure.
+                    </figcaption>
+                  </figure>
 
-              <figure>
-                <iframe
-                  src="https://www.youtube.com/embed/jCXqP2JYEwk"
-                  title="Digital twin tunnel demonstration"
-                  allowfullscreen>
-                </iframe>
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Video: Digital twin concept applied to tunnels.
-                </figcaption>
-              </figure>
+                  <figure>
+                    <iframe
+                      src="https://www.youtube.com/embed/jCXqP2JYEwk"
+                      title="Digital twin tunnel demonstration"
+                      allowfullscreen>
+                    </iframe>
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Video: Digital twin concept applied to tunnels.
+                    </figcaption>
+                  </figure>
 
-              <figure>
-                <img src="https://i.ytimg.com/vi/8jgKgsHn7Vc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAt8Q7Odc_k5WdnXC6LVpsFgfdDEg"
-                     alt="IoT sensor network in a tunnel">
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Sensors feeding data into the digital twin platform.
-                </figcaption>
-              </figure>
+                  <figure>
+                    <img src="https://i.ytimg.com/vi/8jgKgsHn7Vc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAt8Q7Odc_k5WdnXC6LVpsFgfdDEg"
+                         alt="IoT sensor network in a tunnel">
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Sensors feeding data into the digital twin platform.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- MAINTENANCE · PREDICTIVE MAINTENANCE -->
-    <div class="acc-item">
-      <button class="acc-btn">
-        Maintenance · Predictive Maintenance (IoT + CMMS)
-        <span class="chev">▾</span>
-      </button>
-      <div class="acc-panel">
-        <div class="grid grid-2" style="margin-top:12px">
-          <!-- Text column -->
-          <div>
-            <h3>Purpose</h3>
-            <p class="muted">
-              Predictive maintenance combines IoT sensors and CMMS to monitor equipment
-              condition, predict failures earlier, and schedule maintenance at the right time.
-            </p>
+        <!-- MAINTENANCE · PREDICTIVE MAINTENANCE -->
+        <div class="acc-item">
+          <button class="acc-btn">
+            Maintenance · Predictive Maintenance (IoT + CMMS)
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">
+            <div class="grid grid-2" style="margin-top:12px">
+              <!-- Text column -->
+              <div>
+                <h3>Purpose</h3>
+                <p class="muted">
+                  Predictive maintenance combines IoT sensors and CMMS to monitor equipment
+                  condition, predict failures earlier, and schedule maintenance at the right time.
+                </p>
 
-            <h3>Key Features</h3>
-            <ul class="list">
-              <li>Condition-based monitoring using vibration, temperature and runtime</li>
-              <li>Automatic work order creation in CMMS</li>
-              <li>Analytics for mean time between failures (MTBF) and repair (MTTR)</li>
-              <li>Mobile inspections using QR/Barcode tags</li>
-            </ul>
-          </div>
+                <h3>Key Features</h3>
+                <ul class="list">
+                  <li>Condition-based monitoring using vibration, temperature and runtime</li>
+                  <li>Automatic work order creation in CMMS</li>
+                  <li>Analytics for mean time between failures (MTBF) and repair (MTTR)</li>
+                  <li>Mobile inspections using QR/Barcode tags</li>
+                </ul>
+              </div>
 
-          <!-- Visuals column -->
-          <div>
-            <h3>Visuals</h3>
-            <div class="gallery" style="grid-template-columns:2fr 1.2fr 1.2fr">
-              <figure>
-                <img src="https://s3-us-west-2.amazonaws.com/ezmaintain-web-static/asset/images/predictive-maint.jpg"
-                     alt="Dashboard for predictive maintenance">
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Dashboard showing predictive maintenance alerts.
-                </figcaption>
-              </figure>
+              <!-- Visuals column -->
+              <div>
+                <h3>Visuals</h3>
+                <div class="gallery" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+                  <figure>
+                    <img src="https://s3-us-west-2.amazonaws.com/ezmaintain-web-static/asset/images/predictive-maint.jpg"
+                         alt="Dashboard for predictive maintenance alerts"
+                         style="height:180px;object-fit:cover;">
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Dashboard showing predictive maintenance alerts.
+                    </figcaption>
+                  </figure>
 
-              <figure>
-                <iframe
-                  src="https://www.youtube.com/embed/glX3_OBtX-Q"
-                  title="Predictive maintenance explanation"
-                  allowfullscreen>
-                </iframe>
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Video: How predictive maintenance works with IoT data.
-                </figcaption>
-              </figure>
+                  <figure>
+                    <iframe
+                      src="https://www.youtube.com/embed/glX3_OBtX-Q"
+                      title="Predictive maintenance explanation"
+                      allowfullscreen
+                      style="height:180px;">
+                    </iframe>
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Video: How predictive maintenance works with IoT data.
+                    </figcaption>
+                  </figure>
 
-              <figure>
-                <img src="https://www.cryotos.com/wp-content/uploads/2023/04/iot-in-maintenance.webp"
-                     alt="IoT integrated with CMMS">
-                <figcaption class="muted" style="font-size:12px;margin-top:4px">
-                  Integration of IoT sensors with CMMS for maintenance planning.
-                </figcaption>
-              </figure>
+                  <figure>
+                    <img src="https://www.cryotos.com/wp-content/uploads/2023/04/iot-in-maintenance.webp"
+                         alt="IoT integrated with CMMS"
+                         style="height:180px;object-fit:cover;">
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Integration of IoT sensors with CMMS for maintenance planning.
+                    </figcaption>
+                  </figure>
+
+                  <figure>
+                    <img src="https://i4tglobal.com/wp-content/uploads/2022/08/Implementing-a-predictive-maintenance-program-i4T-Global.jpg"
+                         alt="Implementing predictive maintenance program"
+                         style="height:180px;object-fit:cover;">
+                    <figcaption class="muted" style="font-size:12px;margin-top:4px">
+                      Implementing a predictive maintenance programme in practice.
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
-    </div>
-
-  </div>
-</section>
-
+    </section>
 
     <!-- Task 3 -->
     <section id="task3" class="section">
@@ -543,6 +558,132 @@
           </p>
           <p>Source: Add predictive maintenance / CMMS case.</p>
         </div>
+      </div>
+    </section>
+
+    <!-- Visual Gallery -->
+    <section id="gallery" class="section">
+      <h2>Visual Gallery · Full Views</h2>
+      <p class="muted">
+        This gallery shows the main visuals for each technology in a larger format,
+        one by one, for clearer viewing.
+      </p>
+
+      <div style="display:flex;flex-direction:column;gap:26px;margin-top:16px">
+
+        <!-- BIM -->
+        <article class="card">
+          <h3>Design · Building Information Modelling (BIM)</h3>
+          <p class="muted" style="margin-bottom:10px">
+            Selected visuals showing how BIM is used for coordination and clash detection.
+          </p>
+          <figure style="margin:0 0 14px">
+            <img src="https://www.wsp.com/-/media/service/global/image/img-uclh.jpg?h=710&iar=0&w=1440&hash=D03A88293ABEF9357376EB2239A98D7B"
+                 alt="BIM healthcare project"
+                 style="width:100%;max-height:360px;border-radius:16px;border:1px solid #1f2937;object-fit:cover;">
+            <figcaption class="muted" style="font-size:12px;margin-top:4px">
+              BIM model used to coordinate architecture, structure and MEP.
+            </figcaption>
+          </figure>
+          <figure style="margin:0 0 6px">
+            <iframe
+              src="https://www.youtube.com/embed/3VYlYMnONS8"
+              title="BIM workflow overview"
+              allowfullscreen
+              style="width:100%;height:320px;border-radius:16px;border:1px solid #1f2937;">
+            </iframe>
+            <figcaption class="muted" style="font-size:12px;margin-top:4px">
+              Video: Overview of BIM workflow in the design phase.
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Drones -->
+        <article class="card">
+          <h3>Construction · Reality Capture &amp; Drones</h3>
+          <p class="muted" style="margin-bottom:10px">
+            Larger visuals showing drone-based site capture and mapping.
+          </p>
+          <figure style="margin:0 0 14px">
+            <img src="https://media.licdn.com/dms/image/v2/D4D12AQEMCOsS7yUXNA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1679565014156?e=2147483647&v=beta&t=WgwEomsfGTXGIG_YRzechL4mQgxMf4IEWh99DuHuWBA"
+                 alt="Drone scanning construction site"
+                 style="width:100%;max-height:360px;border-radius:16px;border:1px solid #1f2937;object-fit:cover;">
+            <figcaption class="muted" style="font-size:12px;margin-top:4px">
+              Drone capturing site conditions from above.
+            </figcaption>
+          </figure>
+          <figure style="margin:0 0 6px">
+            <iframe
+              src="https://www.youtube.com/embed/6un2J8mtzSA"
+              title="Drone mapping for construction"
+              allowfullscreen
+              style="width:100%;height:320px;border-radius:16px;border:1px solid #1f2937;">
+            </iframe>
+            <figcaption class="muted" style="font-size:12px;margin-top:4px">
+              Video: Using drones for mapping and progress monitoring.
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Digital Twin -->
+        <article class="card">
+          <h3>Operation · Digital Twin (Tunnel)</h3>
+          <p class="muted" style="margin-bottom:10px">
+            Visuals showing how a digital twin represents tunnel infrastructure.
+          </p>
+          <figure style="margin:0 0 14px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS709lid8Z330mn5d_pj4XwNAP1e39dZUb6bw&s"
+                 alt="Digital twin tunnel model"
+                 style="width:100%;max-height:360px;border-radius:16px;border:1px solid #1f2937;object-fit:cover;">
+            <figcaption class="muted" style="font-size:12px;margin-top:4px">
+              Digital twin visualisation of a tunnel environment.
+            </figcaption>
+          </figure>
+          <figure style="margin:0 0 6px">
+            <iframe
+              src="https://www.youtube.com/embed/jCXqP2JYEwk"
+              title="Digital twin tunnel demonstration"
+              allowfullscreen
+              style="width:100%;height:320px;border-radius:16px;border:1px solid #1f2937;">
+            </iframe>
+            <figcaption class="muted" style="font-size:12px;margin-top:4px">
+              Video: Applying digital twin technology in tunnels.
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Predictive Maintenance -->
+        <article class="card">
+          <h3>Maintenance · Predictive Maintenance (IoT + CMMS)</h3>
+          <p class="muted" style="margin-bottom:10px">
+            Full-size visuals showing predictive maintenance dashboards and IoT integration.
+          </p>
+          <figure style="margin:0 0 14px">
+            <img src="https://s3-us-west-2.amazonaws.com/ezmaintain-web-static/asset/images/predictive-maint.jpg"
+                 alt="Predictive maintenance dashboard"
+                 style="width:100%;max-height:360px;border-radius:16px;border:1px solid #1f2937;object-fit:cover;">
+            <figcaption class="muted" style="font-size:12px;margin-top:4px">
+              Dashboard with real-time predictive maintenance indicators.
+            </figcaption>
+          </figure>
+          <figure style="margin:0 0 14px">
+            <img src="https://www.cryotos.com/wp-content/uploads/2023/04/iot-in-maintenance.webp"
+                 alt="IoT with CMMS"
+                 style="width:100%;max-height:360px;border-radius:16px;border:1px solid #1f2937;object-fit:cover;">
+            <figcaption class="muted" style="font-size:12px;margin-top:4px">
+              IoT data integrated with CMMS for smarter planning.
+            </figcaption>
+          </figure>
+          <figure style="margin:0 0 6px">
+            <img src="https://i4tglobal.com/wp-content/uploads/2022/08/Implementing-a-predictive-maintenance-program-i4T-Global.jpg"
+                 alt="Implementing predictive maintenance programme"
+                 style="width:100%;max-height:360px;border-radius:16px;border:1px solid #1f2937;object-fit:cover;">
+            <figcaption class="muted" style="font-size:12px;margin-top:4px">
+              Implementing a predictive maintenance programme in an organisation.
+            </figcaption>
+          </figure>
+        </article>
+
       </div>
     </section>
   </main>
