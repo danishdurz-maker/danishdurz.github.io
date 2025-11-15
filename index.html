@@ -81,7 +81,7 @@
     .acc-btn{
       width:100%;text-align:left;padding:14px 16px;background:#0d1426;
       color:#e5e7eb;display:flex;justify-content:space-between;
-      align-items:center;font-weight:600
+      align-items:center;font-weight:600;cursor:pointer
     }
     .acc-panel{display:none;padding:0 16px 16px;background:#0a1020}
     .acc-item.open .acc-panel{display:block}
@@ -266,8 +266,7 @@
                     <iframe
                       src="https://www.youtube.com/embed/3VYlYMnONS8"
                       title="BIM workflow overview"
-                      allowfullscreen>
-                    </iframe>
+                      allowfullscreen></iframe>
                     <figcaption class="muted" style="font-size:12px;margin-top:4px">
                       Video: Introduction to BIM workflow.
                     </figcaption>
@@ -327,8 +326,7 @@
                     <iframe
                       src="https://www.youtube.com/embed/6un2J8mtzSA"
                       title="Drone mapping for construction"
-                      allowfullscreen>
-                    </iframe>
+                      allowfullscreen></iframe>
                     <figcaption class="muted" style="font-size:12px;margin-top:4px">
                       Video: Drone mapping and progress monitoring.
                     </figcaption>
@@ -389,8 +387,7 @@
                     <iframe
                       src="https://www.youtube.com/embed/jCXqP2JYEwk"
                       title="Digital twin tunnel demonstration"
-                      allowfullscreen>
-                    </iframe>
+                      allowfullscreen></iframe>
                     <figcaption class="muted" style="font-size:12px;margin-top:4px">
                       Video: Digital twin concept applied to tunnels.
                     </figcaption>
@@ -452,8 +449,7 @@
                       src="https://www.youtube.com/embed/glX3_OBtX-Q"
                       title="Predictive maintenance explanation"
                       allowfullscreen
-                      style="height:180px;">
-                    </iframe>
+                      style="height:180px;"></iframe>
                     <figcaption class="muted" style="font-size:12px;margin-top:4px">
                       Video: How predictive maintenance works with IoT data.
                     </figcaption>
@@ -488,144 +484,239 @@
     <!-- Task 3 -->
     <section id="task3" class="section">
       <h2>Task 3 · Impact &amp; Analysis</h2>
+      <p class="muted">
+        This section discusses how each selected technology affects the built environment
+        lifecycle in terms of <strong>productivity</strong>, <strong>cost</strong>,
+        <strong>quality</strong>, <strong>safety</strong> and <strong>sustainability</strong>.
+        The analysis is written from the perspective of an engineering student who is
+        trying to understand both the benefits and the limitations in real projects.
+      </p>
+
       <div class="grid grid-2">
+        <!-- Advantages card -->
         <div class="card">
-          <h3>Advantages</h3>
+          <h3>Key Advantages by Lifecycle Phase</h3>
           <ul class="list">
-            <li><strong>BIM:</strong> Superior coordination, fewer clashes, improved documentation.</li>
-            <li><strong>Drones:</strong> Safer inspections, faster progress tracking, accurate as-builts.</li>
-            <li><strong>Digital Twin:</strong> Lower energy usage, optimised building performance.</li>
-            <li><strong>Predictive Maintenance:</strong> Reduced downtime and smarter asset management.</li>
+            <li>
+              <strong>Design – BIM</strong><br>
+              BIM enables all disciplines to work in a shared model. This greatly reduces
+              drawing conflicts and rework during construction. Design changes can be tested
+              quickly in 3D, and 4D/5D simulations help the team understand the impact of
+              design decisions on time and cost. It also improves communication with
+              non-technical stakeholders because they can visualise the final building.
+            </li>
+            <li>
+              <strong>Construction – Reality Capture &amp; Drones</strong><br>
+              Drones provide a fast and safe way to capture site conditions compared to
+              manual surveys or scaffolding inspections. Accurate orthophotos and point
+              clouds support progress claims, quantity verification and earthwork volume
+              calculations. This reduces disputes between contractor and client and
+              helps site teams respond quickly when work deviates from the BIM model.
+            </li>
+            <li>
+              <strong>Operation – Digital Twin</strong><br>
+              A digital twin gives operators a live view of how the asset is performing.
+              Equipment status, traffic, environmental conditions and alarms can be
+              monitored on one dashboard. This allows earlier detection of abnormal
+              behaviour, improves decision making and supports “what-if” simulation for
+              emergency planning or energy optimisation strategies.
+            </li>
+            <li>
+              <strong>Maintenance – Predictive Maintenance (IoT + CMMS)</strong><br>
+              Instead of waiting for assets to fail, condition-based monitoring allows
+              maintenance teams to plan work before breakdowns happen. This reduces
+              unplanned downtime, avoids secondary damage to other components and
+              improves reliability. Integration with CMMS also standardises work
+              procedures and keeps a traceable history of all interventions.
+            </li>
           </ul>
         </div>
+
+        <!-- Challenges card -->
         <div class="card">
-          <h3>Challenges</h3>
+          <h3>Challenges, Limitations &amp; Risks</h3>
           <ul class="list">
-            <li>High setup cost (software, sensors, hardware).</li>
-            <li>Data interoperability issues (IFC, BACnet, etc.).</li>
-            <li>Training needs &amp; industry readiness.</li>
-            <li>Cybersecurity concerns in IoT systems.</li>
+            <li>
+              <strong>Data quality &amp; interoperability</strong><br>
+              BIM models are powerful only if all parties model correctly and follow
+              standards. Poor geometry or missing information leads to unreliable
+              clash detection. Different software (Revit, Tekla, Civil 3D, etc.) may
+              also cause interoperability issues when exchanging IFC files.
+            </li>
+            <li>
+              <strong>Hardware, sensor and network reliability</strong><br>
+              Drones, IoT devices and tunnel sensors require regular calibration and
+              maintenance. Battery life, GPS signal, and network coverage can affect
+              data quality. If sensors fail or are offline, the digital twin and
+              predictive maintenance models may show misleading information.
+            </li>
+            <li>
+              <strong>Human factors &amp; training</strong><br>
+              Many construction and facility teams are still used to 2D drawings and
+              reactive maintenance. Introducing BIM, digital twin and predictive
+              systems requires training, change management and sometimes a shift in
+              company culture. Without buy-in, the technology may be under-utilised.
+            </li>
+            <li>
+              <strong>Cybersecurity &amp; data governance</strong><br>
+              Connecting building systems and maintenance platforms to the internet
+              increases cyber risk. Access control, encryption and regular updates are
+              needed to protect critical infrastructure data and personal information
+              collected by sensors.
+            </li>
           </ul>
         </div>
       </div>
+
+      <!-- Overall impact card -->
       <div class="card" style="margin-top:18px">
-        <h3>Impact Timeline (Example)</h3>
+        <h3>Overall Impact Across the Lifecycle</h3>
         <div class="timeline">
-          <div class="t-row"><strong>Design:</strong> BIM can reduce design clashes by ~30%.</div>
-          <div class="t-row"><strong>Construction:</strong> Drone capture can speed up inspection by ~50%.</div>
-          <div class="t-row"><strong>Operation:</strong> Digital twins can cut energy usage by 10–20%.</div>
-          <div class="t-row"><strong>Maintenance:</strong> Predictive analytics can lower unplanned failures by ~25–40%.</div>
+          <div class="t-row">
+            <strong>Design phase (BIM):</strong>
+            Better coordination in BIM can reduce design clashes and rework during
+            construction. Many studies report clash reduction of around
+            <em>30–50&nbsp;%</em> compared to traditional 2D workflows. This directly
+            saves time on site and avoids costly redesign.
+          </div>
+          <div class="t-row">
+            <strong>Construction phase (Reality capture &amp; drones):</strong>
+            Frequent drone flights create an objective record of progress. This helps
+            site engineers compare “planned vs actual”, improves documentation for
+            payment claims and allows earlier detection of safety hazards or quality
+            issues. Productivity improves because engineers can inspect large areas
+            from the office instead of spending hours walking the site.
+          </div>
+          <div class="t-row">
+            <strong>Operation phase (Digital twin):</strong>
+            When a digital twin is connected to live sensor data, operators can see
+            immediately how the asset responds to different conditions. For example,
+            ventilation or lighting in a tunnel can be adjusted based on traffic and
+            air-quality readings. This can reduce energy consumption and improve user
+            comfort and safety at the same time.
+          </div>
+          <div class="t-row">
+            <strong>Maintenance phase (Predictive maintenance):</strong>
+            Predictive analytics shifts the strategy from “run-to-failure” to
+            “plan-before-failure”. In practice this means fewer emergency repairs,
+            less overtime work, and better use of spare parts. Over time, the
+            maintenance history stored in CMMS becomes a knowledge base that supports
+            future design decisions and asset replacement planning.
+          </div>
         </div>
         <p class="muted" style="margin-top:8px">
-          Replace the percentages with values from your references if required.
+          Overall, the technologies create the most value when they are used
+          <strong>together</strong> as one continuous digital thread: BIM feeds
+          information into construction reality capture; as-built data updates the
+          digital twin; and sensor data from operation feeds back into predictive
+          maintenance and future design improvements.
         </p>
       </div>
     </section>
 
     <!-- Task 4 -->
     <section id="task4" class="section">
-  <h2>Task 4 · Real Case Studies</h2>
-  <p class="muted">
-    This section presents real-world case studies that demonstrate how the selected
-    technologies are used in actual projects across the built environment lifecycle.
-    Each case highlights measurable benefits, industry outcomes, and current practices.
-  </p>
-
-  <div class="grid grid-2">
-
-    <!-- BIM CASE STUDY -->
-    <div class="card">
-      <h3>Design · BIM in Södersjukhuset Hospital Expansion (Sweden)</h3>
+      <h2>Task 4 · Real Case Studies</h2>
       <p class="muted">
-        The Södersjukhuset Hospital expansion project in Stockholm is one of Europe’s
-        most advanced healthcare developments. LINK Arkitektur used BIM extensively
-        throughout the design phase to integrate architectural, structural, and MEP
-        disciplines within a single federated model. By applying clash detection early,
-        the team significantly reduced coordination issues before construction began.
-        BIM visualisation tools allowed healthcare staff and stakeholders to review
-        ward layouts, patient flow, emergency routes, and ICU configurations in
-        realistic 3D, ensuring the design met operational needs. The project also used
-        BIM for energy simulation and daylight analysis, improving sustainability
-        performance. This case demonstrates how BIM enhances precision and reduces
-        rework in complex building designs.
+        This section presents real-world case studies that demonstrate how the selected
+        technologies are used in actual projects across the built environment lifecycle.
+        Each case highlights measurable benefits, industry outcomes, and current practices.
       </p>
-      <p><strong>Source:</strong>
-        <a href="https://www.graphisoft.com/content/uploads/case-studies/GRAPHISOFT_CaseStudy_LINK_BIMeye.pdf" target="_blank">
-          LINK Arkitektur – BIM Case Study
-        </a>
-      </p>
-    </div>
 
-    <!-- DRONE CASE STUDY -->
-    <div class="card">
-      <h3>Construction · Drone Reality Capture in BIM-Integrated Projects</h3>
-      <p class="muted">
-        A multi-site study by the Global Drone Conference demonstrated how drones improve
-        construction monitoring when combined with BIM and digital twins. Drones captured
-        high-resolution orthophotos, LiDAR data, and point clouds which were then aligned
-        with BIM models to verify progress, detect deviations, and support progress claims.
-        Contractors reported up to 50% faster inspections compared to traditional
-        walk-through surveys. Drones also improved safety by reducing the need for workers
-        to access hazardous or elevated areas. In earthwork projects, drone photogrammetry
-        enabled more accurate volume measurements, reducing disputes between contractors
-        and consultants. The study highlights how aerial reality capture strengthens
-        documentation and enhances site decision-making.
-      </p>
-      <p><strong>Source:</strong>
-        <a href="https://www.globaldroneconference.com/how-can-you-use-drones-to-improve-bim-and-digital-twins-in-construction-management/" target="_blank">
-          Drone Use in BIM & Digital Twin Construction
-        </a>
-      </p>
-    </div>
+      <div class="grid grid-2">
 
-    <!-- DIGITAL TWIN CASE STUDY -->
-    <div class="card">
-      <h3>Operation · Digital Twin for Infrastructure Monitoring (Tunnel & Civil Systems)</h3>
-      <p class="muted">
-        A 2023 study published in the Journal of Civil Engineering and Management analysed
-        the use of digital twins in infrastructure management, particularly for tunnels,
-        bridges and transportation systems. Sensors installed throughout the tunnel
-        recorded ventilation performance, structural stress, vibration, air quality and
-        traffic load. These real-time data streams were integrated into a 3D digital twin,
-        enabling operators to visualise current conditions, simulate emergency scenarios,
-        and optimise operational strategies. The study found improvements in energy
-        efficiency, incident response times, and predictive decision-making for long-term
-        asset management. Digital twins offered a holistic view of the infrastructure,
-        reducing operational uncertainty and enhancing safety.
-      </p>
-      <p><strong>Source:</strong>
-        <a href="https://journals.vilniustech.lt/index.php/JCEM/article/view/23718" target="_blank">
-          Impact of Digital Twin Technology in Infrastructure Management
-        </a>
-      </p>
-    </div>
+        <!-- BIM CASE STUDY -->
+        <div class="card">
+          <h3>Design · BIM in Södersjukhuset Hospital Expansion (Sweden)</h3>
+          <p class="muted">
+            The Södersjukhuset Hospital expansion project in Stockholm is one of Europe’s
+            most advanced healthcare developments. LINK Arkitektur used BIM extensively
+            throughout the design phase to integrate architectural, structural, and MEP
+            disciplines within a single federated model. By applying clash detection early,
+            the team significantly reduced coordination issues before construction began.
+            BIM visualisation tools allowed healthcare staff and stakeholders to review
+            ward layouts, patient flow, emergency routes, and ICU configurations in
+            realistic 3D, ensuring the design met operational needs. The project also used
+            BIM for energy simulation and daylight analysis, improving sustainability
+            performance. This case demonstrates how BIM enhances precision and reduces
+            rework in complex building designs.
+          </p>
+          <p><strong>Source:</strong>
+            <a href="https://www.graphisoft.com/content/uploads/case-studies/GRAPHISOFT_CaseStudy_LINK_BIMeye.pdf" target="_blank">
+              LINK Arkitektur – BIM Case Study
+            </a>
+          </p>
+        </div>
 
-    <!-- PREDICTIVE MAINTENANCE CASE STUDY -->
-    <div class="card">
-      <h3>Maintenance · Predictive Maintenance Using Digital Twin & IoT</h3>
-      <p class="muted">
-        A recent industrial case study published on ResearchGate examined the deployment
-        of predictive maintenance using IoT sensors and digital twin technology. Vibration,
-        temperature, and electrical load sensors were installed on pumps and motors to
-        track equipment health continuously. The data was fed into a digital twin platform
-        capable of detecting early anomalies and predicting Remaining Useful Life (RUL).
-        When an anomaly was detected, the CMMS automatically generated work orders and
-        scheduled maintenance tasks. As a result, the company saw a reduction in unplanned
-        downtime, more efficient use of spare parts, and overall improvement in asset
-        reliability. The study demonstrates how predictive maintenance transforms
-        maintenance from reactive to proactive.
-      </p>
-      <p><strong>Source:</strong>
-        <a href="https://www.researchgate.net/publication/372226913_Digital_Twins_for_predictive_maintenance_A_case_study_for_a_flexible_IT-architecture" target="_blank">
-          Digital Twins for Predictive Maintenance – Case Study
-        </a>
-      </p>
-    </div>
+        <!-- DRONE CASE STUDY -->
+        <div class="card">
+          <h3>Construction · Drone Reality Capture in BIM-Integrated Projects</h3>
+          <p class="muted">
+            A multi-site study by the Global Drone Conference demonstrated how drones improve
+            construction monitoring when combined with BIM and digital twins. Drones captured
+            high-resolution orthophotos, LiDAR data, and point clouds which were then aligned
+            with BIM models to verify progress, detect deviations, and support progress claims.
+            Contractors reported up to 50% faster inspections compared to traditional
+            walk-through surveys. Drones also improved safety by reducing the need for workers
+            to access hazardous or elevated areas. In earthwork projects, drone photogrammetry
+            enabled more accurate volume measurements, reducing disputes between contractors
+            and consultants. The study highlights how aerial reality capture strengthens
+            documentation and enhances site decision-making.
+          </p>
+          <p><strong>Source:</strong>
+            <a href="https://www.globaldroneconference.com/how-can-you-use-drones-to-improve-bim-and-digital-twins-in-construction-management/" target="_blank">
+              Drone Use in BIM &amp; Digital Twin Construction
+            </a>
+          </p>
+        </div>
 
-  </div>
-</section>
+        <!-- DIGITAL TWIN CASE STUDY -->
+        <div class="card">
+          <h3>Operation · Digital Twin for Infrastructure Monitoring (Tunnel &amp; Civil Systems)</h3>
+          <p class="muted">
+            A 2023 study published in the Journal of Civil Engineering and Management analysed
+            the use of digital twins in infrastructure management, particularly for tunnels,
+            bridges and transportation systems. Sensors installed throughout the tunnel
+            recorded ventilation performance, structural stress, vibration, air quality and
+            traffic load. These real-time data streams were integrated into a 3D digital twin,
+            enabling operators to visualise current conditions, simulate emergency scenarios,
+            and optimise operational strategies. The study found improvements in energy
+            efficiency, incident response times, and predictive decision-making for long-term
+            asset management. Digital twins offered a holistic view of the infrastructure,
+            reducing operational uncertainty and enhancing safety.
+          </p>
+          <p><strong>Source:</strong>
+            <a href="https://journals.vilniustech.lt/index.php/JCEM/article/view/23718" target="_blank">
+              Impact of Digital Twin Technology in Infrastructure Management
+            </a>
+          </p>
+        </div>
 
-    
+        <!-- PREDICTIVE MAINTENANCE CASE STUDY -->
+        <div class="card">
+          <h3>Maintenance · Predictive Maintenance Using Digital Twin &amp; IoT</h3>
+          <p class="muted">
+            A recent industrial case study published on ResearchGate examined the deployment
+            of predictive maintenance using IoT sensors and digital twin technology. Vibration,
+            temperature, and electrical load sensors were installed on pumps and motors to
+            track equipment health continuously. The data was fed into a digital twin platform
+            capable of detecting early anomalies and predicting Remaining Useful Life (RUL).
+            When an anomaly was detected, the CMMS automatically generated work orders and
+            scheduled maintenance tasks. As a result, the company saw a reduction in unplanned
+            downtime, more efficient use of spare parts, and overall improvement in asset
+            reliability. The study demonstrates how predictive maintenance transforms
+            maintenance from reactive to proactive.
+          </p>
+          <p><strong>Source:</strong>
+            <a href="https://www.researchgate.net/publication/372226913_Digital_Twins_for_predictive_maintenance_A_case_study_for_a_flexible_IT-architecture" target="_blank">
+              Digital Twins for Predictive Maintenance – Case Study
+            </a>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
     <!-- Visual Gallery -->
     <section id="gallery" class="section">
       <h2>Visual Gallery · Full Views</h2>
@@ -655,8 +746,7 @@
               src="https://www.youtube.com/embed/3VYlYMnONS8"
               title="BIM workflow overview"
               allowfullscreen
-              style="width:100%;height:320px;border-radius:16px;border:1px solid #1f2937;">
-            </iframe>
+              style="width:100%;height:320px;border-radius:16px;border:1px solid #1f2937;"></iframe>
             <figcaption class="muted" style="font-size:12px;margin-top:4px">
               Video: Overview of BIM workflow in the design phase.
             </figcaption>
@@ -682,8 +772,7 @@
               src="https://www.youtube.com/embed/6un2J8mtzSA"
               title="Drone mapping for construction"
               allowfullscreen
-              style="width:100%;height:320px;border-radius:16px;border:1px solid #1f2937;">
-            </iframe>
+              style="width:100%;height:320px;border-radius:16px;border:1px solid #1f2937;"></iframe>
             <figcaption class="muted" style="font-size:12px;margin-top:4px">
               Video: Using drones for mapping and progress monitoring.
             </figcaption>
@@ -709,8 +798,7 @@
               src="https://www.youtube.com/embed/jCXqP2JYEwk"
               title="Digital twin tunnel demonstration"
               allowfullscreen
-              style="width:100%;height:320px;border-radius:16px;border:1px solid #1f2937;">
-            </iframe>
+              style="width:100%;height:320px;border-radius:16px;border:1px solid #1f2937;"></iframe>
             <figcaption class="muted" style="font-size:12px;margin-top:4px">
               Video: Applying digital twin technology in tunnels.
             </figcaption>
