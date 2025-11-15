@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exploring the Technological Advancement in Built Environment Lifecycle</title>
+  <style>
+    :root{
+      --bg:#0b0f17; --card:#121826; --muted:#94a3b8; --text:#e5e7eb;
+      --accent:#60a5fa; --accent-2:#34d399; --warning:#f59e0b;
+    }
+    *{box-sizing:border-box}
+    html,body{
+      margin:0;padding:0;background:var(--bg);color:var(--text);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Helvetica,Arial
+    }
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin-inline:auto;padding:24px}
+    .nav{
+      position:sticky;top:0;background:rgba(11,15,23,.9);
+      backdrop-filter:blur(10px);border-bottom:1px solid #1f2937;z-index:50
+    }
+    .nav-inner{
+      display:flex;gap:16px;align-items:center;justify-content:space-between;
+      padding:10px 24px
+    }
+    .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+    .brand-dot{
+      width:10px;height:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      border-radius:999px;box-shadow:0 0 18px var(--accent)
+    }
+    .nav a{font-weight:600;opacity:.9}
+    .hero{
+      padding:56px 0;display:grid;grid-template-columns:1.2fr .8fr;
+      gap:28px;align-items:center
+    }
+    .hero h1{
+      font-size:clamp(28px,4vw,44px);line-height:1.15;margin:0 0 10px
+    }
+    .hero p{color:var(--muted)}
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;background:#0f172a;
+      border:1px solid #1f2937;color:#cbd5e1;padding:6px 10px;border-radius:999px;
+      font-size:12px
+    }
+    .grid{display:grid;gap:18px}
+    .grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .grid-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr}
+      .grid-4{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:600px){
+      .grid-2,.grid-4{grid-template-columns:1fr}
+    }
+    .card{
+      background:linear-gradient(180deg,#0f172a 0%, #0b1222 100%);
+      border:1px solid #1f2937;border-radius:20px;padding:18px;
+      box-shadow:0 10px 30px rgba(0,0,0,.25)
+    }
+    .card h3{margin:0 0 6px}
+    .pill{
+      display:inline-block;background:#0b1222;border:1px solid #1f2937;
+      padding:4px 8px;border-radius:999px;color:#93c5fd;font-size:12px
+    }
+    .muted{color:var(--muted)}
+    .section{padding:36px 0}
+    .section h2{
+      font-size:clamp(22px,3vw,32px);margin:0 0 12px
+    }
+    .kpi{display:flex;gap:14px;align-items:center}
+    .kpi .dot{width:12px;height:12px;border-radius:999px}
+    .kpi .dot.design{background:#60a5fa}
+    .kpi .dot.construction{background:#f87171}
+    .kpi .dot.operation{background:#34d399}
+    .kpi .dot.maintenance{background:#f59e0b}
+    .list{margin:10px 0 0; padding-left:18px}
+    .accordion{border:1px solid #1f2937;border-radius:16px;overflow:hidden}
+    .acc-item+ .acc-item{border-top:1px solid #1f2937}
+    .acc-btn{
+      width:100%;text-align:left;padding:14px 16px;background:#0d1426;
+      color:#e5e7eb;display:flex;justify-content:space-between;
+      align-items:center;font-weight:600
+    }
+    .acc-panel{display:none;padding:0 16px 16px;background:#0a1020}
+    .acc-item.open .acc-panel{display:block}
+    .acc-item.open .chev{transform:rotate(180deg)}
+    .timeline{position:relative;padding-left:22px}
+    .timeline:before{
+      content:"";position:absolute;left:10px;top:0;bottom:0;width:2px;
+      background:#1f2937
+    }
+    .t-row{position:relative;margin:14px 0}
+    .t-row:before{
+      content:"";position:absolute;left:-2px;top:6px;width:10px;height:10px;
+      border-radius:999px;background:var(--accent)
+    }
+    .gallery{
+      display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px
+    }
+    @media (max-width:740px){.gallery{grid-template-columns:1fr 1fr}}
+    .gallery img, .gallery iframe{
+      width:100%;height:180px;border-radius:12px;border:1px solid #1f2937;
+      object-fit:cover
+    }
+    footer{border-top:1px solid #1f2937;padding:24px 0;color:#94a3b8}
+    .btn{
+      display:inline-block;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      color:#081026;font-weight:800;padding:10px 14px;border-radius:14px
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        E-Portfolio: Built Environment Lifecycle
+      </div>
+      <nav class="links" aria-label="Primary">
+        <a href="#task1">Technologies</a>
+        <span>·</span>
+        <a href="#task2">Descriptions</a>
+        <span>·</span>
+        <a href="#task3">Impact</a>
+        <span>·</span>
+        <a href="#task4">Case Studies</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <span class="badge">GFB0028 · Digital Technology in Built Environment</span>
+        <h1>Exploring the Technological Advancement in Built Environment Lifecycle</h1>
+        <p class="muted">
+          This e-portfolio explores how digital technologies support each phase of the
+          built environment lifecycle: <strong>Design</strong>, <strong>Construction</strong>,
+          <strong>Operation</strong>, and <strong>Maintenance</strong>.
+        </p>
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="#task1">View Technologies ↓</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>About This Website</h3>
+        <ol class="list">
+          <li>Highlights one key technology in each lifecycle phase.</li>
+          <li>Describes purpose, features, and visual examples.</li>
+          <li>Analyses advantages and challenges in real projects.</li>
+          <li>Presents case studies from current industry practice.</li>
+        </ol>
+        <p class="muted" style="margin-top:8px">
+          Prepared by <strong>Danish Durrany Bin Zulfahmy</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Task 1 -->
+    <section id="task1" class="section">
+      <h2>Task 1 · Chosen Technologies</h2>
+      <p class="muted">
+        Technologies selected based on the theme
+        <strong>“Exploring the Technological Advancement in Built Environment Lifecycle.”</strong>
+      </p>
+      <div class="grid grid-4">
+        <article class="card">
+          <div class="kpi"><span class="dot design"></span><strong>Design</strong></div>
+          <h3>Building Information Modelling (BIM)</h3>
+          <p class="muted">
+            A coordinated 3D model integrating architectural, structural, and MEP elements
+            for accurate planning, clash detection, and documentation.
+          </p>
+          <span class="pill">Phase: Design</span>
+        </article>
+
+        <article class="card">
+          <div class="kpi"><span class="dot construction"></span><strong>Construction</strong></div>
+          <h3>Reality Capture &amp; Drones</h3>
+          <p class="muted">
+            Photogrammetry and LiDAR drones capture site progress, generate point clouds,
+            and support progress verification &amp; safety management.
+          </p>
+          <span class="pill">Phase: Construction</span>
+        </article>
+
+        <article class="card">
+          <div class="kpi"><span class="dot operation"></span><strong>Operation</strong></div>
+          <h3>Digital Twin for Facility Operation</h3>
+          <p class="muted">
+            A virtual replica of a building integrating IoT sensors for real-time monitoring,
+            energy optimisation, and performance diagnostics.
+          </p>
+          <span class="pill">Phase: Operation</span>
+        </article>
+
+        <article class="card">
+          <div class="kpi"><span class="dot maintenance"></span><strong>Maintenance</strong></div>
+          <h3>Predictive Maintenance (IoT + CMMS)</h3>
+          <p class="muted">
+            Sensors monitor asset conditions (vibration, temperature, usage). AI predicts
+            failures and CMMS auto-generates maintenance work orders.
+          </p>
+          <span class="pill">Phase: Maintenance</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- Task 2 -->
+    <section id="task2" class="section">
+      <h2>Task 2 · Comprehensive Descriptions</h2>
+      <div class="accordion">
+
+        <!-- BIM -->
+        <div class="acc-item open">
+          <button class="acc-btn" aria-expanded="true">
+            Design · Building Information Modelling (BIM)
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">
+            <div class="grid grid-2" style="margin-top:12px">
+              <div>
+                <h3>Purpose</h3>
+                <p class="muted">
+                  BIM integrates all building disciplines into a single intelligent 3D model,
+                  enabling collaborative design, clash detection, and accurate documentation.
+                </p>
+                <h3>Key Features</h3>
+                <ul class="list">
+                  <li>3D coordinated modelling</li>
+                  <li>Clash detection (Revit / Navisworks)</li>
+                  <li>4D (time) &amp; 5D (cost) simulation</li>
+                  <li>Automatic generation of drawings &amp; BOQ</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Visuals</h3>
+                <div class="gallery">
+                  <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1200&auto=format&fit=crop" alt="BIM model">
+                  <iframe src="https://www.youtube.com/embed/1YsfQb5bS3A" title="BIM Overview" allowfullscreen></iframe>
+                  <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1200&auto=format&fit=crop" alt="Parametric building model">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Drones -->
+        <div class="acc-item">
+          <button class="acc-btn">
+            Construction · Reality Capture &amp; Drones
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">
+            <div class="grid grid-2" style="margin-top:12px">
+              <div>
+                <h3>Purpose</h3>
+                <p class="muted">
+                  Drones and LiDAR scanning document construction progress, enhance site safety,
+                  and produce accurate as-built data for comparison against BIM.
+                </p>
+                <h3>Key Features</h3>
+                <ul class="list">
+                  <li>Orthophotos &amp; photogrammetry</li>
+                  <li>Point cloud generation (LiDAR)</li>
+                  <li>Progress tracking &amp; volume calculations</li>
+                  <li>Safety inspections without physical risk</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Visuals</h3>
+                <div class="gallery">
+                  <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=1200&auto=format&fit=crop" alt="Drone over construction site">
+                  <iframe src="https://www.youtube.com/embed/_MOj0Q3y6tY" title="Drone mapping" allowfullscreen></iframe>
+                  <img src="https://images.unsplash.com/photo-1581091012184-7c54a6b95e1b?q=80&w=1200&auto=format&fit=crop" alt="Point cloud data">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Digital Twin -->
+        <div class="acc-item">
+          <button class="acc-btn">
+            Operation · Digital Twin
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">
+            <div class="grid grid-2" style="margin-top:12px">
+              <div>
+                <h3>Purpose</h3>
+                <p class="muted">
+                  A digital twin mirrors a building’s real-world performance, integrating IoT
+                  sensors to optimise energy, comfort, and asset operation.
+                </p>
+                <h3>Key Features</h3>
+                <ul class="list">
+                  <li>Real-time sensor dashboards</li>
+                  <li>HVAC &amp; lighting optimisation</li>
+                  <li>Fault detection &amp; diagnostics</li>
+                  <li>Occupant comfort analytics</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Visuals</h3>
+                <div class="gallery">
+                  <img src="https://images.unsplash.com/photo-1558346790-d1ab3d9f1f6b?q=80&w=1200&auto=format&fit=crop" alt="Digital twin dashboard">
+                  <iframe src="https://www.youtube.com/embed/0mB6YV4vJ9k" title="Digital Twin overview" allowfullscreen></iframe>
+                  <img src="https://images.unsplash.com/photo-1531973968078-9bb02785f13d?q=80&w=1200&auto=format&fit=crop" alt="IoT sensors in building">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Predictive Maintenance -->
+        <div class="acc-item">
+          <button class="acc-btn">
+            Maintenance · Predictive Maintenance (IoT + CMMS)
+            <span class="chev">▾</span>
+          </button>
+          <div class="acc-panel">
+            <div class="grid grid-2" style="margin-top:12px">
+              <div>
+                <h3>Purpose</h3>
+                <p class="muted">
+                  Combines IoT sensors and analytics to predict equipment failures and
+                  generate proactive work orders through a CMMS platform.
+                </p>
+                <h3>Key Features</h3>
+                <ul class="list">
+                  <li>Condition-based triggers</li>
+                  <li>Automated work order scheduling</li>
+                  <li>MTBF/MTTR insights</li>
+                  <li>QR tagging &amp; mobile inspections</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Visuals</h3>
+                <div class="gallery">
+                  <img src="https://images.unsplash.com/photo-1581091215367-59ab6dcef4a7?q=80&w=1200&auto=format&fit=crop" alt="Maintenance sensors">
+                  <iframe src="https://www.youtube.com/embed/ywh3wqv-3Q4" title="Predictive maintenance" allowfullscreen></iframe>
+                  <img src="https://images.unsplash.com/photo-1593642532744-d377ab507dc8?q=80&w=1200&auto=format&fit=crop" alt="CMMS app">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Task 3 -->
+    <section id="task3" class="section">
+      <h2>Task 3 · Impact &amp; Analysis</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Advantages</h3>
+          <ul class="list">
+            <li><strong>BIM:</strong> Superior coordination, fewer clashes, improved documentation.</li>
+            <li><strong>Drones:</strong> Safer inspections, faster progress tracking, accurate as-builts.</li>
+            <li><strong>Digital Twin:</strong> Lower energy usage, optimised building performance.</li>
+            <li><strong>Predictive Maintenance:</strong> Reduced downtime and smarter asset management.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Challenges</h3>
+          <ul class="list">
+            <li>High setup cost (software, sensors, hardware).</li>
+            <li>Data interoperability issues (IFC, BACnet, etc.).</li>
+            <li>Training needs &amp; industry readiness.</li>
+            <li>Cybersecurity concerns in IoT systems.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <h3>Impact Timeline (Example)</h3>
+        <div class="timeline">
+          <div class="t-row"><strong>Design:</strong> BIM can reduce design clashes by ~30%.</div>
+          <div class="t-row"><strong>Construction:</strong> Drone capture can speed up inspection by ~50%.</div>
+          <div class="t-row"><strong>Operation:</strong> Digital twins can cut energy usage by 10–20%.</div>
+          <div class="t-row"><strong>Maintenance:</strong> Predictive analytics can lower unplanned failures by ~25–40%.</div>
+        </div>
+        <p class="muted" style="margin-top:8px">
+          Replace the percentages with values from your references if required.
+        </p>
+      </div>
+    </section>
+
+    <!-- Task 4 -->
+    <section id="task4" class="section">
+      <h2>Task 4 · Real Case Studies</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Design · BIM in Hospital Project</h3>
+          <p class="muted">
+            BIM used to coordinate architecture, structure, and MEP in a hospital project,
+            significantly reducing clashes before construction.
+          </p>
+          <p>Source: Add BIM project article or case study link.</p>
+        </div>
+        <div class="card">
+          <h3>Construction · Drone Progress Tracking</h3>
+          <p class="muted">
+            Weekly drone flights captured orthophotos and point clouds, enabling objective
+            tracking of progress and earthwork volumes.
+          </p>
+          <p>Source: Add drone mapping case study.</p>
+        </div>
+        <div class="card">
+          <h3>Operation · Smart Campus Digital Twin</h3>
+          <p class="muted">
+            A university implemented a digital twin to monitor HVAC systems, achieving
+            measurable energy savings and improved comfort.
+          </p>
+          <p>Source: Add smart campus / digital twin reference.</p>
+        </div>
+        <div class="card">
+          <h3>Maintenance · Predictive Maintenance Programme</h3>
+          <p class="muted">
+            IoT sensors and CMMS were deployed to predict chiller and pump failures,
+            reducing unplanned downtime and maintenance cost.
+          </p>
+          <p>Source: Add predictive maintenance / CMMS case.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Made by <strong>Danish Durrany Bin Zulfahmy</strong> ·
+      <span class="muted">GFB0028 · Digital Technology in Built Environment</span>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.acc-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.acc-item');
+        item.classList.toggle('open');
+        const expanded = item.classList.contains('open');
+        btn.setAttribute('aria-expanded', expanded);
+      });
+    });
+  </script>
+</body>
+</html>
